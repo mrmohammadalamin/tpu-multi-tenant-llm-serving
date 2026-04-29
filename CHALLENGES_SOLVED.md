@@ -6,7 +6,7 @@ This project addresses the critical infrastructure and serving challenges of Lar
 
 ### 1. Multi-Tenant Personalization at Scale (Multi-LoRA)
 - **Problem**: Serving thousands of personalized models (one per customer) usually requires massive VRAM or causes high latency due to model swapping.
-- **Solution**: We implemented a **Multi-LoRA architecture**. A single base model (**Gemma 2 9B**) stays in the TPU High Bandwidth Memory (HBM), while small LoRA adapters (megabytes each) are dynamically loaded from GCS/HuggingFace per request.
+- **Solution**: We implemented a **Multi-LoRA architecture**. A single base model (**Gemma 3 12B**) stays in the TPU High Bandwidth Memory (HBM), while small LoRA adapters (megabytes each) are dynamically loaded from GCS/HuggingFace per request.
 - **Impact**: Enables 1000+ tenants to be served from a single TPU slice with sub-100ms latency.
 
 ### 2. Hardware-Intimate Optimization (TPU v6e + vLLM)

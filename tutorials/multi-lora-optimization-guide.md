@@ -6,7 +6,7 @@ This tutorial explains the technical details of how we optimize LLM serving for 
 In a typical SaaS, you might have 1,000 customers. If each customer needs a fine-tuned model, you cannot possibly load 1,000 full models (e.g., 1,000 x 18GB for Gemma 2 9B) into memory.
 
 **Our Solution**: 
-- **Base Model (Static)**: We load the Gemma 2 9B base model once into the TPU HBM.
+- **Base Model (Static)**: We load the **Gemma 3 12B** base model once into the TPU HBM.
 - **Adapters (Dynamic)**: We load only the LoRA weights (approx. 50MB - 100MB per tenant) on-the-fly.
 
 ## 2. TPU v6e (CT6E) Advantages

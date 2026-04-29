@@ -3,7 +3,7 @@
 Welcome to the **Multi-Tenant LLM Serving** project, developed for the **Google Cloud TPU Builder Sprint**. This repository showcases a production-grade SaaS architecture that leverages the latest **TPU v6e (CT6E)** hardware to serve thousands of personalized LLMs at a fraction of the cost of traditional GPUs.
 
 ## 🌟 Project Vision
-In a world where every company needs a personalized AI, we solve the "one-model-per-user" problem using **Multi-LoRA**. Instead of 1000 separate models, we use **1 Base Model + 1000 dynamically loaded adapters**, all running on Google's most advanced TPU v6e hardware.
+In a world where every company needs a personalized AI, we solve the "one-model-per-user" problem using **Multi-LoRA**. Instead of 1000 separate models, we use **1 Base Model (Gemma 3 12B) + 1000 dynamically loaded adapters**, all running on Google's most advanced TPU v6e hardware.
 
 ## 🚀 Solved Challenges for TPU Sprint
 - **[x] Multi-LoRA Efficiency**: Dynamic adapter loading with zero downtime.

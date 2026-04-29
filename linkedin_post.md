@@ -8,7 +8,7 @@ My solution: **Multi-Tenant LLM Serving on TPU v6e.**
 
 ### 💡 The Breakthrough: Multi-LoRA Architecture
 Instead of loading thousands of full models, we use a "Base Model + Dynamic Adapters" approach.
-- **The Base**: Gemma 2 9B stays resident in the TPU memory.
+- **The Base**: **Gemma 3 12B** stays resident in the TPU memory.
 - **The Adapters**: Tiny LoRA weights (50MB) are loaded on-the-fly per request.
 - **The Result**: Thousands of personalized models, served from a single TPU slice with sub-50ms latency.
 

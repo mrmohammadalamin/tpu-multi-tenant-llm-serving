@@ -19,7 +19,7 @@ In this article, I’ll show you how we solved this for the **Google Cloud TPU B
 Instead of loading 1,000 separate models, our architecture uses a **"Base Model + Dynamic Adapters"** approach.
 
 ### 1. The Base Model (The Foundation)
-We load a single instance of a high-performance model, like **Gemma 2 9B**, into the TPU’s High Bandwidth Memory (HBM). This model stays resident and handles the core reasoning.
+We load a single instance of a high-performance model, like **Gemma 3 12B**, into the TPU’s High Bandwidth Memory (HBM). This model stays resident and handles the core reasoning.
 
 ### 2. Dynamic Adapters (The Personalization)
 When a request comes in from "Tenant A," we dynamically apply their specific **LoRA (Low-Rank Adaptation)** weights. These adapters are tiny (50MB - 100MB) compared to the base model (18GB+). 
