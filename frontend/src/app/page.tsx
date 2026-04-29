@@ -82,7 +82,7 @@ export default function Home() {
             <span className="text-xs font-mono text-white/40">vllm-autoscaler-v1</span>
           </div>
           <div className="space-y-3 font-mono text-[11px] leading-relaxed">
-            <p className="text-cyan-400">[INFO] 20:42:01 - Queue length exceeded threshold (L=8 > T=5)</p>
+            <p className="text-cyan-400">[INFO] 20:42:01 - Queue length exceeded threshold (L=8 &gt; T=5)</p>
             <p className="text-white/60">[SCALING] 20:42:15 - Triggering HPA: Adding 2 new TPU v6e nodes...</p>
             <p className="text-white/40">[INFO] 20:43:50 - Node us-south1-ai1b-node-7 ready.</p>
             <p className="text-white/40">[INFO] 20:44:10 - Node us-south1-ai1b-node-8 ready.</p>
