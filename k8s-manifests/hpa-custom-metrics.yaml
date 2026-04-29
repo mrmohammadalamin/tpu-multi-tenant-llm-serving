@@ -1,0 +1,22 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: vllm-tpu-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: vllm-tpu-server
+  minReplicas: 1
+  maxReplicas: 10
+  metrics:
+  - type: Pods
+    pods:
+      metric:
+        name: vllm_num_requests_waiting
+      target:
+        type: AverageValue
+        averageValue: "5" # Scale up if average queue length > 5
+---
+# Note: This requires Prometheus Adapter installed in the cluster.
+# The adapter maps Prometheus metrics to the Custom Metrics API.
