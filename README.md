@@ -11,6 +11,8 @@ In a world where every company needs a personalized AI, we solve the "one-model-
 - **[x] Semantic Autoscaling**: HPA based on request queue length, not CPU.
 - **[x] Cost Leadership**: 60%+ cost reduction compared to A100 GPU setups.
 
+👉 **[Read the full technical breakdown of challenges solved here](CHALLENGES_SOLVED.md)**
+
 ## 🏗️ Architecture Diagram
 ```mermaid
 graph TD
