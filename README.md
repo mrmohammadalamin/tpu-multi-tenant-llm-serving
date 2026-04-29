@@ -65,6 +65,12 @@ bash k8s-manifests/teardown_infrastructure.sh
 
 ---
 
+## 🎥 Video Demonstration
+Check out the live walkthrough of the Multi-Tenant Dashboard and Playground:
+**[Watch the Demo Video](tpu_sprint_demo.webp)**
+
+---
+
 ## 📸 Dashboard Preview
 
 ### 📊 Main Telemetry & Analytics
@@ -72,6 +78,25 @@ bash k8s-manifests/teardown_infrastructure.sh
 
 ### 🎮 Interactive Multi-LoRA Playground
 ![Dashboard Playground](dashboard_playground.png)
+
+---
+
+## 🧪 Testing & FAQ
+
+### Q: Why TPU v6e over flagship GPUs?
+**A:** TPU v6e provides superior price-to-performance for Multi-LoRA workloads. The high HBM bandwidth allows for near-instantaneous switching of LoRA adapters, which is a bottleneck on traditional GPU architectures.
+
+### Q: How does the system handle 1,000+ tenants?
+**A:** We use **vLLM's dynamic LoRA swapping**. Instead of loading 1,000 full models, we load one base model (**Gemma 3 12B**) and swap tiny adapter weights (50MB) on-the-fly based on the request's Tenant ID.
+
+### Q: What triggers the scaling mechanism?
+**A:** Our custom HPA (Horizontal Pod Autoscaler) monitors the **vLLM Request Queue Length**. If more than 5 requests are waiting, the system automatically provisions new TPU v6e nodes to maintain sub-50ms latency.
+
+### Q: How do I test the different adapters?
+**A:** Launch the Playground and use these domain-specific prompts:
+- **Legal**: "Analyze the liability clause in this contract."
+- **Medical**: "Symptoms of Vitamin D deficiency in urban areas?"
+- **Python**: "Write a JAX function for TPU dot product."
 
 ---
 
