@@ -63,4 +63,9 @@ bash k8s-manifests/teardown_infrastructure.sh
 
 ---
 
+## 📖 Technical Deep-Dive
+Read the full story of how we built this and see the detailed benchmarks on **[Medium](https://medium.com/p/YOUR_POST_ID)**.
+
+---
+
 **Developed for the Google Cloud TPU Builder Sprint 2026.**
