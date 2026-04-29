@@ -71,13 +71,22 @@ Check out the live walkthrough of the Multi-Tenant Dashboard and Playground:
 
 ---
 
-## 📸 Dashboard Preview
+## 📸 Project Previews
 
-### 📊 Main Telemetry & Analytics
-![Dashboard Main](dashboard_main.png)
+### 📊 SaaS Dashboard Overview
+![Dashboard Overview](dashboard_overview.png)
 
-### 🎮 Interactive Multi-LoRA Playground
-![Dashboard Playground](dashboard_playground.png)
+### 📈 Live Telemetry & Metrics
+![Dashboard Metrics](dashboard_metrics.png)
+
+### 🎮 Multi-LoRA Interactive Playground
+![Playground Chat](playground_chat.png)
+
+### 📜 Real-time Scaling Logs
+![Scaling Logs](scaling_logs.png)
+
+### 💰 TPU vs GPU Cost Analysis
+![Cost Analysis](cost_analysis.png)
 
 ---
 
