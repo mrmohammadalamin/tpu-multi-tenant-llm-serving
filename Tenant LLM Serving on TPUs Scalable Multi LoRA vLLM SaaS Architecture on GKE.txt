@@ -1,5 +1,0 @@
-87 Project sample code
-TPU, vLLM, JAX, PyTorch on XLA or TPU
-Multi-Tenant LLM Serving on TPUs: Scalable Multi-LoRA vLLM SaaS Architecture on GKE
-
-This project presents a production-grade architecture for serving large language models (LLMs) in a multi-tenant Software-as-a-Service (SaaS) environment using Google Cloud TPUs. Instead of deploying separate models for each customer, the system leverages a single base model (e.g., Gemma 3) with dynamically loaded LoRA adapters per request, enabling efficient personalization at scale. Built on top of vLLM and deployed on Google Kubernetes Engine (GKE) with TPU nodes, the system demonstrates how to handle thousands of concurrent users while minimizing infrastructure cost and latency. The project also introduces a smart autoscaling mechanism using Kubernetes Horizontal Pod Autoscaler (HPA) based on real-time metrics such as request queue length and token throughput. Additionally, the project includes benchmarking and cost analysis comparing TPU-based inference with traditional GPU setups, highlighting the advantages of TPUs for large-scale LLM serving.
