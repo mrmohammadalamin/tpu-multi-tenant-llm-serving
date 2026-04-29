@@ -63,6 +63,16 @@ bash k8s-manifests/teardown_infrastructure.sh
 
 ---
 
+## 📸 Dashboard Preview
+
+### 📊 Main Telemetry & Analytics
+![Dashboard Main](dashboard_main.png)
+
+### 🎮 Interactive Multi-LoRA Playground
+![Dashboard Playground](dashboard_playground.png)
+
+---
+
 ## 📖 Technical Deep-Dive
 Read the full story of how we built this and see the detailed benchmarks on **[Medium](https://medium.com/p/YOUR_POST_ID)**.
 
